@@ -45,16 +45,16 @@ var style_Distritos_6 = function(feature, resolution){
     
     var labelText = ""; 
     var value = feature.get("participa");
-    var labelFont = "10px, sans-serif";
-    var labelFill = "#000000";
-    var bufferColor = "";
-    var bufferWidth = 0;
+    var labelFont = "9.1px \'Arial\', sans-serif";
+    var labelFill = "#f5fcf3";
+    var bufferColor = "#000000";
+    var bufferWidth = 2.0999999999999996;
     var textAlign = "left";
     var offsetX = 0;
     var offsetY = 0;
     var placement = 'point';
-    if ("" !== null) {
-        labelText = String("");
+    if (feature.get("Minusculas") !== null) {
+        labelText = String(feature.get("Minusculas"));
     }
     
     var style = categories_Distritos_6(feature, value, size, resolution, labelText,

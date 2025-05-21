@@ -9,10 +9,10 @@ var style_LimiteProvincial_3 = function(feature, resolution){
     
     var labelText = ""; 
     var value = feature.get("");
-    var labelFont = "7.800000000000001px \'Open Sans\', sans-serif";
-    var labelFill = "#0b2e0b";
+    var labelFont = "11.700000000000001px \'Open Sans\', sans-serif";
+    var labelFill = "#000000";
     var bufferColor = "#ffffff";
-    var bufferWidth = 2.0999999999999996;
+    var bufferWidth = 2.7;
     var textAlign = "left";
     var offsetX = 0;
     var offsetY = 0;

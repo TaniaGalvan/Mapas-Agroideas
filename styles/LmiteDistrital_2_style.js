@@ -9,8 +9,8 @@ var style_LmiteDistrital_2 = function(feature, resolution){
     
     var labelText = ""; 
     var value = feature.get("");
-    var labelFont = "10px, sans-serif";
-    var labelFill = "#000000";
+    var labelFont = "10.4px \'Arial Narrow\', sans-serif";
+    var labelFill = "#ffffff";
     var bufferColor = "";
     var bufferWidth = 0;
     var textAlign = "left";
