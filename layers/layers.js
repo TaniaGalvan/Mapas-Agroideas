@@ -11,29 +11,21 @@ var wms_layers = [];
                 url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'
             })
         });
-var format_NdeOAMsegnprovincia_1 = new ol.format.GeoJSON();
-var features_NdeOAMsegnprovincia_1 = format_NdeOAMsegnprovincia_1.readFeatures(json_NdeOAMsegnprovincia_1, 
+var format_EEMRI2025_1 = new ol.format.GeoJSON();
+var features_EEMRI2025_1 = format_EEMRI2025_1.readFeatures(json_EEMRI2025_1, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_NdeOAMsegnprovincia_1 = new ol.source.Vector({
+var jsonSource_EEMRI2025_1 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_NdeOAMsegnprovincia_1.addFeatures(features_NdeOAMsegnprovincia_1);
-var lyr_NdeOAMsegnprovincia_1 = new ol.layer.Vector({
+jsonSource_EEMRI2025_1.addFeatures(features_EEMRI2025_1);
+var lyr_EEMRI2025_1 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_NdeOAMsegnprovincia_1, 
-                style: style_NdeOAMsegnprovincia_1,
-                popuplayertitle: 'N° de OAM según provincia',
+                source:jsonSource_EEMRI2025_1, 
+                style: style_EEMRI2025_1,
+                popuplayertitle: 'EEMRI 2025',
                 interactive: true,
-    title: 'N° de OAM según provincia<br />\
-    <img src="styles/legend/NdeOAMsegnprovincia_1_0.png" /> 0<br />\
-    <img src="styles/legend/NdeOAMsegnprovincia_1_1.png" /> 1<br />\
-    <img src="styles/legend/NdeOAMsegnprovincia_1_2.png" /> 2<br />\
-    <img src="styles/legend/NdeOAMsegnprovincia_1_3.png" /> 3<br />\
-    <img src="styles/legend/NdeOAMsegnprovincia_1_4.png" /> 4<br />\
-    <img src="styles/legend/NdeOAMsegnprovincia_1_5.png" /> 5<br />\
-    <img src="styles/legend/NdeOAMsegnprovincia_1_6.png" /> 8<br />\
-    <img src="styles/legend/NdeOAMsegnprovincia_1_7.png" /> 9<br />\
-    <img src="styles/legend/NdeOAMsegnprovincia_1_8.png" /> <br />' });
+                title: '<img src="styles/legend/EEMRI2025_1.png" /> EEMRI 2025'
+            });
 var format_LmiteDistrital_2 = new ol.format.GeoJSON();
 var features_LmiteDistrital_2 = format_LmiteDistrital_2.readFeatures(json_LmiteDistrital_2, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
@@ -79,98 +71,75 @@ var lyr_LmiteDepartamental_4 = new ol.layer.Vector({
                 interactive: false,
                 title: '<img src="styles/legend/LmiteDepartamental_4.png" /> Límite Departamental'
             });
-var format_LimiteCajamarca_5 = new ol.format.GeoJSON();
-var features_LimiteCajamarca_5 = format_LimiteCajamarca_5.readFeatures(json_LimiteCajamarca_5, 
+var format_LimiteAncash_5 = new ol.format.GeoJSON();
+var features_LimiteAncash_5 = format_LimiteAncash_5.readFeatures(json_LimiteAncash_5, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_LimiteCajamarca_5 = new ol.source.Vector({
+var jsonSource_LimiteAncash_5 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_LimiteCajamarca_5.addFeatures(features_LimiteCajamarca_5);
-var lyr_LimiteCajamarca_5 = new ol.layer.Vector({
+jsonSource_LimiteAncash_5.addFeatures(features_LimiteAncash_5);
+var lyr_LimiteAncash_5 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_LimiteCajamarca_5, 
-                style: style_LimiteCajamarca_5,
-                popuplayertitle: 'Limite Cajamarca',
+                source:jsonSource_LimiteAncash_5, 
+                style: style_LimiteAncash_5,
+                popuplayertitle: 'Limite Ancash',
                 interactive: false,
-                title: '<img src="styles/legend/LimiteCajamarca_5.png" /> Limite Cajamarca'
+                title: '<img src="styles/legend/LimiteAncash_5.png" /> Limite Ancash'
             });
-var format_Distritos_6 = new ol.format.GeoJSON();
-var features_Distritos_6 = format_Distritos_6.readFeatures(json_Distritos_6, 
+var format_DistritosparticipanEEMRI_6 = new ol.format.GeoJSON();
+var features_DistritosparticipanEEMRI_6 = format_DistritosparticipanEEMRI_6.readFeatures(json_DistritosparticipanEEMRI_6, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_Distritos_6 = new ol.source.Vector({
+var jsonSource_DistritosparticipanEEMRI_6 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_Distritos_6.addFeatures(features_Distritos_6);
-var lyr_Distritos_6 = new ol.layer.Vector({
+jsonSource_DistritosparticipanEEMRI_6.addFeatures(features_DistritosparticipanEEMRI_6);
+var lyr_DistritosparticipanEEMRI_6 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_Distritos_6, 
-                style: style_Distritos_6,
-                popuplayertitle: 'Distritos ',
+                source:jsonSource_DistritosparticipanEEMRI_6, 
+                style: style_DistritosparticipanEEMRI_6,
+                popuplayertitle: 'Distritos participan EEMRI ',
                 interactive: true,
-    title: 'Distritos <br />\
-    <img src="styles/legend/Distritos_6_0.png" /> PARTICIPA<br />\
-    <img src="styles/legend/Distritos_6_1.png" /> NO PARTICIPA<br />' });
-var group_SanMiguel = new ol.layer.Group({
-                                layers: [],
-                                fold: 'close',
-                                title: 'San Miguel'});
-var group_Cajamarca = new ol.layer.Group({
-                                layers: [],
-                                fold: 'close',
-                                title: 'Cajamarca'});
-var group_Hualgayoc = new ol.layer.Group({
-                                layers: [],
-                                fold: 'close',
-                                title: 'Hualgayoc'});
-var group_SantaCruz = new ol.layer.Group({
-                                layers: [],
-                                fold: 'close',
-                                title: 'Santa Cruz'});
-var group_SanIgnacio = new ol.layer.Group({
-                                layers: [],
-                                fold: 'close',
-                                title: 'San Ignacio'});
-var group_Jaen = new ol.layer.Group({
-                                layers: [],
-                                fold: 'close',
-                                title: 'Jaen'});
-var group_Cutervo = new ol.layer.Group({
-                                layers: [],
-                                fold: 'close',
-                                title: 'Cutervo'});
-var group_Chota = new ol.layer.Group({
-                                layers: [],
-                                fold: 'close',
-                                title: 'Chota'});
-var group_Celendin = new ol.layer.Group({
-                                layers: [],
-                                fold: 'close',
-                                title: 'Celendin'});
-var group_Cajabamba = new ol.layer.Group({
-                                layers: [],
-                                fold: 'close',
-                                title: 'Cajabamba'});
+    title: 'Distritos participan EEMRI <br />\
+    <img src="styles/legend/DistritosparticipanEEMRI_6_0.png" /> PARTICIPA<br />' });
+var format_DistritosnoparticipanEEMRI_7 = new ol.format.GeoJSON();
+var features_DistritosnoparticipanEEMRI_7 = format_DistritosnoparticipanEEMRI_7.readFeatures(json_DistritosnoparticipanEEMRI_7, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_DistritosnoparticipanEEMRI_7 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_DistritosnoparticipanEEMRI_7.addFeatures(features_DistritosnoparticipanEEMRI_7);
+var lyr_DistritosnoparticipanEEMRI_7 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_DistritosnoparticipanEEMRI_7, 
+                style: style_DistritosnoparticipanEEMRI_7,
+                popuplayertitle: 'Distritos no participan EEMRI',
+                interactive: false,
+    title: 'Distritos no participan EEMRI<br />\
+    <img src="styles/legend/DistritosnoparticipanEEMRI_7_0.png" /> NO PARTICIPA<br />' });
 
-lyr_ESRISatelliteArcGISWorld_Imagery_0.setVisible(true);lyr_NdeOAMsegnprovincia_1.setVisible(true);lyr_LmiteDistrital_2.setVisible(true);lyr_LimiteProvincial_3.setVisible(true);lyr_LmiteDepartamental_4.setVisible(true);lyr_LimiteCajamarca_5.setVisible(true);lyr_Distritos_6.setVisible(true);
-var layersList = [lyr_ESRISatelliteArcGISWorld_Imagery_0,lyr_NdeOAMsegnprovincia_1,lyr_LmiteDistrital_2,lyr_LimiteProvincial_3,lyr_LmiteDepartamental_4,lyr_LimiteCajamarca_5,lyr_Distritos_6];
-lyr_NdeOAMsegnprovincia_1.set('fieldAliases', {'IDDPTO': 'IDDPTO', 'DEPARTAMEN': 'DEPARTAMENTO', 'PROVINCIA': 'PROVINCIA', 'CAPITAL': 'CAPITAL', 'OAM': 'SOLICITUDES EEMRI', 'ELEGIBLES': 'ELEGIBLES', 'NO ELEGIBL': 'NO ELEGIBLE', 'INFORMACIO': 'INFORMACIO', });
+lyr_ESRISatelliteArcGISWorld_Imagery_0.setVisible(true);lyr_EEMRI2025_1.setVisible(true);lyr_LmiteDistrital_2.setVisible(true);lyr_LimiteProvincial_3.setVisible(true);lyr_LmiteDepartamental_4.setVisible(true);lyr_LimiteAncash_5.setVisible(true);lyr_DistritosparticipanEEMRI_6.setVisible(true);lyr_DistritosnoparticipanEEMRI_7.setVisible(true);
+var layersList = [lyr_ESRISatelliteArcGISWorld_Imagery_0,lyr_EEMRI2025_1,lyr_LmiteDistrital_2,lyr_LimiteProvincial_3,lyr_LmiteDepartamental_4,lyr_LimiteAncash_5,lyr_DistritosparticipanEEMRI_6,lyr_DistritosnoparticipanEEMRI_7];
+lyr_EEMRI2025_1.set('fieldAliases', {'IDDPTO': 'IDDPTO', 'DEPARTAMEN': 'DEPARTAMENTO', 'PROVINCIA': 'PROVINCIA', 'CAPITAL': 'CAPITAL', 'OAM': 'SOLICITUDES EEMRI', 'ELEGIBLES': 'ELEGIBLES', 'NO ELEGIBL': 'NO ELEGIBLES', 'INFORMACIO': 'INFORMACIÓN', });
 lyr_LmiteDistrital_2.set('fieldAliases', {'IDDPTO': 'IDDPTO', 'DEPARTAMEN': 'DEPARTAMEN', 'IDPROV': 'IDPROV', 'PROVINCIA': 'PROVINCIA', 'IDDIST': 'IDDIST', 'DISTRITO': 'DISTRITO', 'CAPITAL': 'CAPITAL', 'CODCCPP': 'CODCCPP', 'AREA': 'AREA', 'FUENTE': 'FUENTE', 'Minusculas': 'Minusculas', });
 lyr_LimiteProvincial_3.set('fieldAliases', {'IDDPTO': 'IDDPTO', 'DEPARTAMEN': 'DEPARTAMEN', 'PROVINCIA': 'PROVINCIA', 'CAPITAL': 'CAPITAL', 'OAM': 'OAM', 'ELEGIBLES': 'ELEGIBLES', 'NO ELEGIBL': 'NO ELEGIBL', 'INFORMACIO': 'INFORMACIO', });
 lyr_LmiteDepartamental_4.set('fieldAliases', {'IDDPTO': 'IDDPTO', 'DEPARTAMEN': 'DEPARTAMEN', 'CAPITAL': 'CAPITAL', 'FUENTE': 'FUENTE', });
-lyr_LimiteCajamarca_5.set('fieldAliases', {'IDDPTO': 'IDDPTO', 'DEPARTAMEN': 'DEPARTAMEN', 'CAPITAL': 'CAPITAL', 'FUENTE': 'FUENTE', });
-lyr_Distritos_6.set('fieldAliases', {'CATEGORIA': 'CATEGORIA', 'NOMBRE': 'NOMBRE', 'DISTRITO': 'DISTRITO', 'DEPARTA': 'DEPARTA', 'EEMRI': 'SOLICITUDES EEMRI', 'participa': 'PARTICIPA EEMRI', 'ELEGIBLES': 'ELEGIBLES', 'NO ELEGIBL': 'NO ELEGIBLES', 'Minusculas': 'Minusculas', });
-lyr_NdeOAMsegnprovincia_1.set('fieldImages', {'IDDPTO': 'TextEdit', 'DEPARTAMEN': 'TextEdit', 'PROVINCIA': 'TextEdit', 'CAPITAL': 'TextEdit', 'OAM': 'TextEdit', 'ELEGIBLES': 'Range', 'NO ELEGIBL': 'Range', 'INFORMACIO': 'ExternalResource', });
+lyr_LimiteAncash_5.set('fieldAliases', {'IDDPTO': 'IDDPTO', 'DEPARTAMEN': 'DEPARTAMEN', 'CAPITAL': 'CAPITAL', 'FUENTE': 'FUENTE', });
+lyr_DistritosparticipanEEMRI_6.set('fieldAliases', {'NOMBRE': 'NOMBRE', 'DISTRITO': 'DISTRITO', 'DEPARTA': 'DEPARTA', 'SOL EEMRI': 'SOLICITUDES EEMRI 2023', 'ELEGIBLES': 'SOLICITUDES EEMRI 2024', 'NO ELEGI': 'SOLICITUDES EEMRI 2025', 'minusculas': 'minusculas', 'PARTICIPA': 'PARTICIPA EEMRI', 'RESULTADOS': 'RESULTADOS', });
+lyr_DistritosnoparticipanEEMRI_7.set('fieldAliases', {'NOMBRE': 'NOMBRE', 'DISTRITO': 'DISTRITO', 'DEPARTA': 'DEPARTA', 'SOL EEMRI': 'SOLICITUDES EEMRI 2023', 'ELEGIBLES': 'SOLICITUDES EEMRI 2024', 'NO ELEGI': 'SOLICITUDES EEMRI 2025', 'minusculas': 'minusculas', 'PARTICIPA': 'PARTICIPA EEMRI', 'RESULTADOS': 'RESULTADOS', });
+lyr_EEMRI2025_1.set('fieldImages', {'IDDPTO': 'TextEdit', 'DEPARTAMEN': 'TextEdit', 'PROVINCIA': 'TextEdit', 'CAPITAL': 'TextEdit', 'OAM': 'TextEdit', 'ELEGIBLES': 'Range', 'NO ELEGIBL': 'Range', 'INFORMACIO': 'ExternalResource', });
 lyr_LmiteDistrital_2.set('fieldImages', {'IDDPTO': 'TextEdit', 'DEPARTAMEN': 'TextEdit', 'IDPROV': 'TextEdit', 'PROVINCIA': 'TextEdit', 'IDDIST': 'TextEdit', 'DISTRITO': 'TextEdit', 'CAPITAL': 'TextEdit', 'CODCCPP': 'TextEdit', 'AREA': 'Range', 'FUENTE': 'TextEdit', 'Minusculas': 'TextEdit', });
 lyr_LimiteProvincial_3.set('fieldImages', {'IDDPTO': 'TextEdit', 'DEPARTAMEN': 'TextEdit', 'PROVINCIA': 'TextEdit', 'CAPITAL': 'TextEdit', 'OAM': 'TextEdit', 'ELEGIBLES': 'TextEdit', 'NO ELEGIBL': 'TextEdit', 'INFORMACIO': 'ExternalResource', });
 lyr_LmiteDepartamental_4.set('fieldImages', {'IDDPTO': 'TextEdit', 'DEPARTAMEN': 'TextEdit', 'CAPITAL': 'TextEdit', 'FUENTE': 'TextEdit', });
-lyr_LimiteCajamarca_5.set('fieldImages', {'IDDPTO': 'TextEdit', 'DEPARTAMEN': 'TextEdit', 'CAPITAL': 'TextEdit', 'FUENTE': 'TextEdit', });
-lyr_Distritos_6.set('fieldImages', {'CATEGORIA': 'TextEdit', 'NOMBRE': 'TextEdit', 'DISTRITO': 'TextEdit', 'DEPARTA': 'TextEdit', 'EEMRI': 'TextEdit', 'participa': 'TextEdit', 'ELEGIBLES': 'Range', 'NO ELEGIBL': 'Range', 'Minusculas': 'TextEdit', });
-lyr_NdeOAMsegnprovincia_1.set('fieldLabels', {'IDDPTO': 'hidden field', 'DEPARTAMEN': 'inline label - always visible', 'PROVINCIA': 'inline label - always visible', 'CAPITAL': 'hidden field', 'OAM': 'inline label - always visible', 'ELEGIBLES': 'inline label - always visible', 'NO ELEGIBL': 'inline label - always visible', 'INFORMACIO': 'inline label - always visible', });
-lyr_LmiteDistrital_2.set('fieldLabels', {'IDDPTO': 'no label', 'DEPARTAMEN': 'no label', 'IDPROV': 'no label', 'PROVINCIA': 'no label', 'IDDIST': 'no label', 'DISTRITO': 'inline label - visible with data', 'CAPITAL': 'no label', 'CODCCPP': 'no label', 'AREA': 'no label', 'FUENTE': 'no label', 'Minusculas': 'no label', });
+lyr_LimiteAncash_5.set('fieldImages', {'IDDPTO': 'TextEdit', 'DEPARTAMEN': 'TextEdit', 'CAPITAL': 'TextEdit', 'FUENTE': 'TextEdit', });
+lyr_DistritosparticipanEEMRI_6.set('fieldImages', {'NOMBRE': 'TextEdit', 'DISTRITO': 'TextEdit', 'DEPARTA': 'TextEdit', 'SOL EEMRI': 'TextEdit', 'ELEGIBLES': 'TextEdit', 'NO ELEGI': 'TextEdit', 'minusculas': 'TextEdit', 'PARTICIPA': 'TextEdit', 'RESULTADOS': 'ExternalResource', });
+lyr_DistritosnoparticipanEEMRI_7.set('fieldImages', {'NOMBRE': 'TextEdit', 'DISTRITO': 'TextEdit', 'DEPARTA': 'TextEdit', 'SOL EEMRI': 'TextEdit', 'ELEGIBLES': 'TextEdit', 'NO ELEGI': 'TextEdit', 'minusculas': 'TextEdit', 'PARTICIPA': 'TextEdit', 'RESULTADOS': 'ExternalResource', });
+lyr_EEMRI2025_1.set('fieldLabels', {'IDDPTO': 'hidden field', 'DEPARTAMEN': 'inline label - always visible', 'PROVINCIA': 'inline label - always visible', 'CAPITAL': 'hidden field', 'OAM': 'inline label - always visible', 'ELEGIBLES': 'inline label - always visible', 'NO ELEGIBL': 'inline label - always visible', 'INFORMACIO': 'hidden field', });
+lyr_LmiteDistrital_2.set('fieldLabels', {'IDDPTO': 'inline label - visible with data', 'DEPARTAMEN': 'no label', 'IDPROV': 'no label', 'PROVINCIA': 'header label - always visible', 'IDDIST': 'no label', 'DISTRITO': 'no label', 'CAPITAL': 'no label', 'CODCCPP': 'no label', 'AREA': 'no label', 'FUENTE': 'no label', 'Minusculas': 'no label', });
 lyr_LimiteProvincial_3.set('fieldLabels', {'IDDPTO': 'no label', 'DEPARTAMEN': 'no label', 'PROVINCIA': 'no label', 'CAPITAL': 'no label', 'OAM': 'no label', 'ELEGIBLES': 'no label', 'NO ELEGIBL': 'no label', 'INFORMACIO': 'no label', });
 lyr_LmiteDepartamental_4.set('fieldLabels', {'IDDPTO': 'no label', 'DEPARTAMEN': 'no label', 'CAPITAL': 'no label', 'FUENTE': 'no label', });
-lyr_LimiteCajamarca_5.set('fieldLabels', {'IDDPTO': 'hidden field', 'DEPARTAMEN': 'hidden field', 'CAPITAL': 'no label', 'FUENTE': 'no label', });
-lyr_Distritos_6.set('fieldLabels', {'CATEGORIA': 'hidden field', 'NOMBRE': 'hidden field', 'DISTRITO': 'inline label - always visible', 'DEPARTA': 'hidden field', 'EEMRI': 'inline label - always visible', 'participa': 'hidden field', 'ELEGIBLES': 'inline label - always visible', 'NO ELEGIBL': 'inline label - always visible', 'Minusculas': 'hidden field', });
-lyr_Distritos_6.on('precompose', function(evt) {
+lyr_LimiteAncash_5.set('fieldLabels', {'IDDPTO': 'hidden field', 'DEPARTAMEN': 'hidden field', 'CAPITAL': 'no label', 'FUENTE': 'no label', });
+lyr_DistritosparticipanEEMRI_6.set('fieldLabels', {'NOMBRE': 'hidden field', 'DISTRITO': 'inline label - always visible', 'DEPARTA': 'hidden field', 'SOL EEMRI': 'inline label - always visible', 'ELEGIBLES': 'inline label - always visible', 'NO ELEGI': 'inline label - always visible', 'minusculas': 'hidden field', 'PARTICIPA': 'hidden field', 'RESULTADOS': 'header label - always visible', });
+lyr_DistritosnoparticipanEEMRI_7.set('fieldLabels', {'NOMBRE': 'hidden field', 'DISTRITO': 'inline label - always visible', 'DEPARTA': 'no label', 'SOL EEMRI': 'no label', 'ELEGIBLES': 'no label', 'NO ELEGI': 'no label', 'minusculas': 'no label', 'PARTICIPA': 'no label', 'RESULTADOS': 'no label', });
+lyr_DistritosnoparticipanEEMRI_7.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });

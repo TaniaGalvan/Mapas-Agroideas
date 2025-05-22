@@ -9,7 +9,7 @@ var style_LimiteProvincial_3 = function(feature, resolution){
     
     var labelText = ""; 
     var value = feature.get("");
-    var labelFont = "11.700000000000001px \'Open Sans\', sans-serif";
+    var labelFont = "9.1px \'Open Sans\', sans-serif";
     var labelFill = "#000000";
     var bufferColor = "#ffffff";
     var bufferWidth = 2.7;
@@ -17,11 +17,11 @@ var style_LimiteProvincial_3 = function(feature, resolution){
     var offsetX = 0;
     var offsetY = 0;
     var placement = 'point';
-    if (feature.get("PROVINCIA") !== null) {
-        labelText = String(feature.get("PROVINCIA"));
+    if (feature.get("wordwrap(\"PROVINCIA\",8)") !== null) {
+        labelText = String(feature.get("wordwrap(\"PROVINCIA\",8)"));
     }
     var style = [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(11,46,11,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1.14}),
+        stroke: new ol.style.Stroke({color: 'rgba(97,9,78,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1.14}),fill: new ol.style.Fill({color: 'rgba(251,238,250,0.30196078431372547)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
