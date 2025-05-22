@@ -21,7 +21,7 @@ var style_LimiteProvincial_3 = function(feature, resolution){
         labelText = String(feature.get("wordwrap(\"PROVINCIA\",8)"));
     }
     var style = [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(97,9,78,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1.14}),fill: new ol.style.Fill({color: 'rgba(251,238,250,0.30196078431372547)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(97,9,78,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.6599999999999997}),fill: new ol.style.Fill({color: 'rgba(251,238,250,0.30196078431372547)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)

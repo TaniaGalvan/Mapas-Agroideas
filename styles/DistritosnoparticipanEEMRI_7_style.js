@@ -8,7 +8,7 @@ function categories_DistritosnoparticipanEEMRI_7(feature, value, size, resolutio
                     return [ new ol.style.Style({
         image: new ol.style.Icon({
                   imgSize: [700, 700],
-                  scale: 0.03,
+                  scale: 0.04285714285714286,
                   anchor: [350.0, 350.0],
                   anchorXUnits: "pixels",
                   anchorYUnits: "pixels",

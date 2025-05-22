@@ -8,7 +8,7 @@ function categories_DistritosparticipanEEMRI_6(feature, value, size, resolution,
                     return [ new ol.style.Style({
         image: new ol.style.Icon({
                   imgSize: [700, 700],
-                  scale: 0.04285714285714286,
+                  scale: 0.06428571428571428,
                   anchor: [350.0, 350.0],
                   anchorXUnits: "pixels",
                   anchorYUnits: "pixels",
@@ -29,7 +29,7 @@ var style_DistritosparticipanEEMRI_6 = function(feature, resolution){
     
     var labelText = ""; 
     var value = feature.get("PARTICIPA");
-    var labelFont = "9.1px \'Arial\', sans-serif";
+    var labelFont = "10.4px \'Arial\', sans-serif";
     var labelFill = "#ffffff";
     var bufferColor = "#000000";
     var bufferWidth = 1.5;
